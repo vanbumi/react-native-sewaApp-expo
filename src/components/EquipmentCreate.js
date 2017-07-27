@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import { View, Text } from 'react-native';
 import { Picker, Text, ScrollView } from 'react-native'; 
 import { connect } from 'react-redux';
 import { equipmentUpdate, equipmentCreate } from '../actions';
