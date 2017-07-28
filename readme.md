@@ -708,4 +708,12 @@ v.143
 ### Fetching data from Firebase
 v.144
 
+### Storing data by ID
+v.144
+
+### Dynamic DataSource Building
+V.146
+
+### Transforming Objects to Arrays with Lodash
+V.147
 
