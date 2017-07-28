@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { ListView, View, Text } from 'react-native';
@@ -5,7 +6,7 @@ import { equipmentFetch } from '../actions';
 
 class EquipmentList extends Component {
   componentWillMount() {
-    this.props.equipmentFetch();
+    this.props.equipmentFetch(); // this tell action creator to fetch list equipments
 
     this.createDataSource(this.props);
   }
@@ -41,5 +42,13 @@ class EquipmentList extends Component {
   }
 } 
 
-export default connect(null, { equipmentFetch }) (EquipmentList); 
+const mapStateToProps = state => {
+  const equipments = _.map(state.equipments, (val, uid) => {
+    return { ...val, uid };    
+  });
+
+  return { equipments }
+};
+
+export default connect(mapStateToProps, { equipmentFetch }) (EquipmentList); 
 
