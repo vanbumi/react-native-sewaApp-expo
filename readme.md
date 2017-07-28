@@ -717,3 +717,6 @@ V.146
 ### Transforming Objects to Arrays with Lodash
 V.147
 
+### List building in employee list
+v.148
+
