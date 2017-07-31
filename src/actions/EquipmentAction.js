@@ -27,6 +27,7 @@ export const equipmentCreate = ({
     };
 };
 
+// equipment fetch
 export const equipmentFetch = () => {
   const { currentUser } = firebase.auth();
 
