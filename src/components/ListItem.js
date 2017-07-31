@@ -9,7 +9,7 @@ class ListItem extends Component {
     return (
       <CardSection>
         <Text style={styles.titleStyle} >
-          { name }
+          {name}
         </Text>
       </CardSection>
     );
@@ -20,7 +20,7 @@ const styles = {
   titleStyle: {
     fontSize: 18,
     paddingLeft: 15,
-    backgroundColor: 'lightgrey'
+    backgroundColor: '#888'
   }
 };
 
